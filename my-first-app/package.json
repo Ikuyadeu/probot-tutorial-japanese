@@ -1,0 +1,41 @@
+{
+  "name": "my-first-app",
+  "version": "1.0.0",
+  "description": "A Probot app",
+  "author": "YukiUeda <ikuyadeu@yahoo.co.jp>",
+  "license": "ISC",
+  "repository": "https://github.com/Ikuyadeu/my-first-app.git",
+  "homepage": "https://github.com/Ikuyadeu/my-first-app",
+  "bugs": "https://github.com/Ikuyadeu/my-first-app/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./lib/index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "probot": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3",
+    "typescript": "^2.9.2"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
