@@ -1,0 +1,44 @@
+{
+  "name": "issue-pr-info",
+  "version": "1.0.0",
+  "description": "A Probot app",
+  "author": "Yuki Ueda <ikuyadeu@yahoo.co.jp>",
+  "license": "ISC",
+  "repository": "https://github.com/Ikuyadeu/issue-pr-info.git",
+  "homepage": "https://github.com/Ikuyadeu/issue-pr-info",
+  "bugs": "https://github.com/Ikuyadeu/issue-pr-info/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./lib/index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "probot": "^7.0.0",
+    "fs-extra": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "@types/node": "^10.5.5",
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3",
+    "typescript": "^2.9.2"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
