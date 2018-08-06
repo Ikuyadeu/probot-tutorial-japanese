@@ -23,4 +23,4 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 
-[ISC](LICENSE) © 2018 YukiUeda <ikuyadeu@yahoo.co.jp>
+[ISC](LICENSE) © 2018 YukiUeda <ikuyadeu0513@gmail.com>
